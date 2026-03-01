@@ -1,561 +1,526 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Official Links & Resources | Butwal Hacks Community</title>
-    <meta name="description" content="Explore official Butwal Hacks links, events, and community resources. Discover hackathons in Nepal, Daydream Butwal, HackDay Butwal, and our developer community." />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://link.butwalhacks.com/" />
-    <link rel="icon" href="logo.png" type="image/png" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="color-scheme" content="dark">
+    
+    <!-- SEO & Meta -->
+    <title>Butwal Hacks – Nepal's Developer & Hackathon Community | Links</title>
+    <meta name="description" content="Official links for Butwal Hacks — Nepal's developer and hackathon community. Join events, access resources, and connect with builders.">
+    <meta name="keywords" content="Butwal Hacks, hackathon Nepal, developer community, Daydream Butwal, HackDay Butwal">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://links.butwalhacks.com/">
+    <link rel="icon" href="public/logo.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" href="public/logo.jpg">
+    
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Butwal Hacks – Nepal's Developer & Hackathon Community">
+    <meta property="og:description" content="Official links, events, and resources from Butwal Hacks — a developer and hackathon community based in Nepal.">
+    <meta property="og:url" content="https://links.butwalhacks.com/">
+    <meta property="og:image" content="https://links.butwalhacks.com/public/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Butwal Hacks – Developer & Hackathon Community">
+    <meta name="twitter:description" content="Events, resources, and official links from Butwal Hacks — Nepal's hackathon and developer community.">
+    <meta name="twitter:image" content="https://links.butwalhacks.com/public/og-image.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    
     <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         :root {
-            --bg-start: #F7E8EC;
-            --bg-end: #F7E8EC;
-            --card-bg: rgba(255, 255, 255, 0.85);
-            --text: #1A0B12;
-            --muted: #6b7280;
-            --button-bg: #f3f4f6;
-            --button-border: #e5e7eb;
-            --button-hover-bg: #e5e7eb;
-            --primary: #C57C8A;
-            --primary-hover: #A85A6B;
-            --shadow-card: 0 8px 24px rgba(31, 41, 55, 0.12);
-            --shadow-hover: 0 6px 16px rgba(31, 41, 55, 0.16);
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #1a1a1a;
+            --text-primary: #ffffff;
+            --text-secondary: #a3a3a3;
+            --accent-red: #dc2626;
+            --accent-red-glow: rgba(220, 38, 38, 0.4);
+            --border-subtle: rgba(255, 255, 255, 0.1);
         }
 
-        * {
-            transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+        html {
+            font-size: 16px;
         }
-
-        html, body { height: 100%; }
 
         body {
-            margin: 0;
-            padding: 16px;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            color: var(--text);
-            background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
             min-height: 100vh;
         }
 
-        @media (min-width: 480px) {
-            body { padding: 24px; }
+        /* Container */
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 2rem 1.25rem;
+            animation: fadeIn 0.6s ease-out;
         }
 
-        .card {
-            width: 100%;
-            max-width: 560px;
-            background: var(--card-bg);
-            border-radius: 20px;
-            box-shadow: var(--shadow-card);
-            padding: 24px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        @media (min-width: 480px) {
-            .card { padding: 32px; }
-        }
-
-        @media (min-width: 768px) {
-            .card { padding: 36px; }
-        }
-
-        .profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 16px;
-        }
-
-        .avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            overflow: hidden;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-            border: 4px solid rgba(255, 255, 255, 0.5);
-        }
-
-        @media (min-width: 480px) {
-            .avatar {
-                width: 120px;
-                height: 120px;
+        @media (min-width: 640px) {
+            .container {
+                padding: 3rem 2rem;
             }
         }
 
-        .avatar img {
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInStagger {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 0 0 0 var(--accent-red-glow);
+            }
+            50% {
+                box-shadow: 0 0 0 8px transparent;
+            }
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            animation: fadeInStagger 0.8s ease-out 0.1s both;
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            margin: 0 auto 1.25rem;
+            border: 3px solid var(--accent-red);
+            box-shadow: 0 0 24px var(--accent-red-glow);
+            overflow: hidden;
+            background-color: var(--bg-secondary);
+        }
+
+        .logo img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        .name {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            margin: 0;
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
         }
 
-        @media (min-width: 480px) {
-            .name { font-size: 2rem; }
+        @media (min-width: 640px) {
+            h1 {
+                font-size: 2.25rem;
+            }
         }
 
         .tagline {
-            color: var(--muted);
-            font-size: 0.85rem;
-            margin: 0;
-            font-weight: 500;
-        }
-
-        @media (min-width: 480px) {
-            .tagline { font-size: 0.95rem; }
-        }
-
-        .links {
-            margin-top: 28px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        @media (min-width: 480px) {
-            .links { gap: 12px; margin-top: 32px; }
-        }
-
-        .link-group {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .link-group-title {
-            margin: 8px 0 2px;
             font-size: 0.95rem;
-            font-weight: 700;
-            letter-spacing: 0.2px;
-            text-align: left;
+            color: var(--text-secondary);
+            font-weight: 400;
+            max-width: 400px;
+            margin: 0 auto;
         }
 
-        @media (min-width: 480px) {
-            .link-group-title { font-size: 1.05rem; }
+        /* Primary CTA */
+        .cta-primary {
+            display: block;
+            width: 100%;
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            background: var(--accent-red);
+            color: var(--text-primary);
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.05rem;
+            font-weight: 700;
+            border-radius: 12px;
+            border: 2px solid var(--accent-red);
+            transition: all 0.2s ease;
+            animation: fadeInStagger 0.8s ease-out 0.2s both, pulse 2.5s infinite;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-primary:hover {
+            background: #b91c1c;
+            border-color: #b91c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px var(--accent-red-glow);
+        }
+
+        .cta-primary:active {
+            transform: translateY(0);
+        }
+
+        /* Section */
+        section {
+            margin: 2.5rem 0;
+            animation: fadeInStagger 0.8s ease-out 0.3s both;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        /* Event Cards */
+        .events-grid {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem;
+            background: var(--bg-secondary);
+            border: 2px solid var(--border-subtle);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .event-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 10px;
+            padding: 2px;
+            background: linear-gradient(135deg, var(--accent-red), transparent);
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .event-card:hover {
+            background: rgba(220, 38, 38, 0.05);
+            border-color: var(--accent-red);
+            transform: translateX(4px);
+        }
+
+        .event-card:hover::before {
+            opacity: 1;
+        }
+
+        .event-logo {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            overflow: hidden;
+            flex-shrink: 0;
+            background-color: var(--bg-primary);
+        }
+
+        .event-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .event-content {
+            flex: 1;
+        }
+
+        .event-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .event-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        /* Link Buttons */
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
         }
 
         .link-btn {
-            display: inline-flex;
+            display: flex;
             align-items: center;
             justify-content: center;
-            width: 100%;
-            padding: 12px 16px;
-            border-radius: 12px;
+            gap: 0.75rem;
+            padding: 1rem 1.25rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
             text-decoration: none;
-            color: var(--text);
-            background: var(--button-bg);
-            border: 1px solid var(--button-border);
-            cursor: pointer;
+            font-size: 0.95rem;
             font-weight: 600;
-            font-size: 0.9rem;
-            min-height: 44px;
-        }
-
-        @media (min-width: 480px) {
-            .link-btn {
-                padding: 14px 16px;
-                font-size: 0.95rem;
-                min-height: 48px;
-            }
+            border: 1px solid var(--border-subtle);
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            min-height: 56px;
         }
 
         .link-btn:hover {
-            background: var(--button-hover-bg);
-            box-shadow: var(--shadow-hover);
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
             transform: translateY(-2px);
         }
 
-        .link-btn:active {
-            transform: translateY(0);
-            box-shadow: none;
-        }
-
-        .link-btn img, .link-btn svg {
-            width: 18px;
-            height: 18px;
-            margin-right: 10px;
+        .link-btn svg {
+            width: 20px;
+            height: 20px;
             flex-shrink: 0;
         }
 
-        @media (min-width: 480px) {
-            .link-btn img, .link-btn svg {
-                width: 20px;
-                height: 20px;
-                margin-right: 12px;
-            }
+        /* Social Links */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 0.75rem;
         }
 
-        .link-btn.primary {
-            background: var(--primary);
-            color: #ffffff;
-            border-color: transparent;
-            font-weight: 700;
-            animation: pulse 2s infinite;
-        }
-
-        .link-btn.primary:hover {
-            background: var(--primary-hover);
-        }
-
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 0 0 0 rgba(197, 124, 138, 0.7); }
-            50% { box-shadow: 0 0 0 8px rgba(197, 124, 138, 0); }
-        }
-
-        footer {
-            margin-top: 24px;
-            text-align: center;
-            color: var(--muted);
-            font-size: 0.75rem;
-        }
-
-        @media (min-width: 480px) {
-            footer {
-                margin-top: 28px;
-                font-size: 0.8rem;
-            }
-        }
-
-        .seo-content {
-            margin-top: 28px;
-            text-align: left;
-            color: var(--text);
-            line-height: 1.6;
-            font-size: 0.95rem;
-        }
-
-        .seo-content h2 {
-            margin: 18px 0 8px;
-            font-size: 1.1rem;
-        }
-
-        .seo-content p {
-            margin: 0 0 12px;
-            color: var(--text);
-        }
-
-        .theme-btn {
-            position: fixed;
-            top: 16px;
-            right: 16px;
-            width: 46px;
-            height: 46px;
-            border-radius: 50%;
-            background: var(--primary);
-            color: white;
-            border: none;
-            cursor: pointer;
+        .social-link {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.3rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            z-index: 1000;
-        }
-
-        @media (min-width: 480px) {
-            .theme-btn {
-                top: 24px;
-                right: 24px;
-                width: 50px;
-                height: 50px;
-                font-size: 1.5rem;
-            }
-        }
-
-        .theme-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .theme-menu {
-            position: fixed;
-            top: 70px;
-            right: 16px;
-            background: var(--card-bg);
-            border-radius: 16px;
-            box-shadow: var(--shadow-card);
-            display: none;
-            flex-direction: column;
-            gap: 6px;
-            padding: 10px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            z-index: 1001;
-        }
-
-        @media (min-width: 480px) {
-            .theme-menu {
-                top: 90px;
-                right: 24px;
-                gap: 8px;
-                padding: 12px;
-            }
-        }
-
-        .theme-menu.active {
-            display: flex;
-        }
-
-        .theme-option {
-            padding: 8px 12px;
-            border-radius: 8px;
-            background: rgba(0, 0, 0, 0.05);
-            border: 2px solid transparent;
-            cursor: pointer;
+            gap: 0.5rem;
+            padding: 0.875rem;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 0.875rem;
             font-weight: 600;
-            font-size: 0.8rem;
-            color: var(--text);
-            min-height: 36px;
+            border: 1px solid var(--border-subtle);
+            border-radius: 8px;
+            transition: all 0.2s ease;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: var(--accent-red);
+            transform: translateY(-2px);
+        }
+
+        .social-link svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+            text-align: center;
+            animation: fadeInStagger 0.8s ease-out 0.4s both;
+        }
+
+        .footer-links {
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
         }
 
-        @media (min-width: 480px) {
-            .theme-option {
-                padding: 10px 16px;
-                font-size: 0.9rem;
-            }
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s ease;
         }
 
-        .theme-option:hover {
-            background: rgba(0, 0, 0, 0.1);
+        .footer-links a:hover {
+            color: var(--accent-red);
         }
 
-        .theme-option.active {
-            background: var(--primary);
-            color: white;
-            border-color: var(--primary);
+        .footer-copy {
+            margin-top: 1rem;
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+        }
+
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Focus states */
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid var(--accent-red);
+            outline-offset: 2px;
         }
     </style>
 </head>
 <body>
-    <button class="theme-btn" onclick="toggleThemeMenu()" aria-label="Toggle theme menu">🎨</button>
-    <div class="theme-menu" id="themeMenu">
-        <button class="theme-option" onclick="setTheme('obsidian-rose')">Obsidian Rose</button>
-        <button class="theme-option" onclick="setTheme('sage-purple')">Sage & Purple</button>
-        <button class="theme-option" onclick="setTheme('matcha-grape')">Matcha Garden</button>
-        <button class="theme-option" onclick="setTheme('twilight-rose')">Twilight Rose</button>
-        <button class="theme-option" onclick="setTheme('ocean-coral')">Ocean Coral</button>
-        <button class="theme-option" onclick="setTheme('earth-tones')">Earth Tones</button>
-    </div>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="public/logo.jpg" alt="Butwal Hacks community logo">
+            </div>
+            <h1>Butwal Hacks</h1>
+            <p class="tagline">Nepal's Developer & Hackathon Community</p>
+        </header>
 
-    <main class="card" role="main" aria-label="Profile links">
-        <section class="profile" aria-label="Profile">
-            <div class="avatar" aria-hidden="true">
-                <img src="logo.png" alt="Butwal Hacks logo" />
-            </div>
-            <h1 class="name">Official Links & Resources - Butwal Hacks</h1>
-            <p class="tagline">Hackathons in Nepal • Developer community • Events</p>
-        </section>
+        <main>
+            <!-- Primary CTA -->
+            <a href="https://wa.me/message/DTPQKTBW3GMAD1" class="cta-primary" aria-label="Join Butwal Hacks community on WhatsApp">
+                Join Our Community →
+            </a>
 
-        <section class="links" aria-label="Links">
-            <div class="link-group">
-                <h2 class="link-group-title">Events & Programs</h2>
-                <a class="link-btn" href="https://daydream.butwalhacks.com" target="_blank" rel="noopener">
-                    <img src="daydreambutwal.png" alt="Daydream Butwal logo" onerror="this.style.display='none';" />
-                    Daydream Butwal Official Site
-                </a>
-                <a class="link-btn" href="https://hackday.butwalhacks.com" target="_blank" rel="noopener">
-                    <img src="hackdaybutwal.png" alt="HackDay Butwal logo" onerror="this.style.display='none';" />
-                    HackDay Butwal Official Site
-                </a>
-            </div>
-            <div class="link-group">
-                <h2 class="link-group-title">Resources & Contact</h2>
-                <a class="link-btn primary" href="https://butwalhacks.com" target="_blank" rel="noopener">
-                    <img src="logo.png" alt="Butwal Hacks logo" onerror="this.style.display='none';" />
-                    Butwal Hacks Main Website
-                </a>
-                <a class="link-btn" href="mailto:Inquiry@butwalhacks.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EA4335"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                    Contact Butwal Hacks via Email
-                </a>
-            </div>
-            <div class="link-group">
-                <h2 class="link-group-title">Community & Social</h2>
-                <a class="link-btn" href="https://wa.me/message/DTPQKTBW3GMAD1" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    WhatsApp Community Chat
-                </a>
-                <a class="link-btn" href="https://www.instagram.com/butwal.hacks" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="url(#instagram-gradient)"><defs><linearGradient id="instagram-gradient" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#FFDC80"/><stop offset="25%" style="stop-color:#F77737"/><stop offset="50%" style="stop-color:#E1306C"/><stop offset="75%" style="stop-color:#C13584"/><stop offset="100%" style="stop-color:#833AB4"/></linearGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-                    Instagram Updates
-                </a>
-                <a class="link-btn" href="https://www.tiktok.com/@butwalhacks" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/></svg>
-                    TikTok Highlights
-                </a>
-                <a class="link-btn" href="https://x.com/ButwalHacks" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#000000"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    X (Twitter) News
-                </a>
-                <a class="link-btn" href="https://www.linkedin.com/company/butwalhacks/" target="_blank" rel="noopener">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    LinkedIn Updates
-                </a>
-            </div>
-        </section>
+            <!-- Featured Events -->
+            <section aria-labelledby="events-heading">
+                <h2 class="section-title" id="events-heading">Featured Events</h2>
+                <div class="events-grid">
+                    <a href="https://daydream.butwalhacks.com" class="event-card" aria-label="Visit Daydream Butwal official site">
+                        <div class="event-logo">
+                            <img src="public/DaydreamButwal.png" alt="Daydream Butwal logo">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-title">Daydream Butwal</div>
+                            <div class="event-desc">Showcase creative projects</div>
+                        </div>
+                    </a>
+                    <a href="https://hackday.butwalhacks.com" class="event-card" aria-label="Visit HackDay Butwal official site">
+                        <div class="event-logo">
+                            <img src="public/HackdayButwal.png" alt="HackDay Butwal logo">
+                        </div>
+                        <div class="event-content">
+                            <div class="event-title">HackDay Butwal</div>
+                            <div class="event-desc">Fast-paced hackathon experience</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
 
-        <section class="seo-content" aria-label="About Butwal Hacks">
-            <h2>About Butwal Hacks</h2>
-            <p>Butwal Hacks is a community-first initiative focused on building a strong developer community in Nepal. We organize hackathons in Nepal, workshops, and hands-on events that help students, makers, and professionals build real skills. This link hub is the official place to access trusted Butwal Hacks resources, our core programs, and our active community channels. If you are new to our mission, start with the main website to learn about our story and see how to get involved.</p>
-            <p>Our flagship events include Daydream Butwal and HackDay Butwal. Daydream Butwal showcases creative projects and gives emerging teams a platform to present new ideas, while HackDay Butwal is a fast paced hackathon experience that turns ideas into working prototypes. These events are designed to bring together mentors, developers, and partners who want to grow the local tech ecosystem. By supporting a consistent pipeline of events and learning opportunities, Butwal Hacks helps connect talent to opportunities across Nepal and beyond.</p>
-            <p>This page exists so you can quickly find the right destination without confusion. Each link is grouped by purpose, from program pages to community social channels and direct contact. Whether you are looking to join a chat, follow our updates, or register for an upcoming hackathon, you can trust these links to be current and verified. Visit often to see new resources, new event announcements, and the latest community updates from Butwal Hacks.</p>
-        </section>
+            <!-- Main Website Link -->
+            <section aria-labelledby="resources-heading">
+                <h2 class="section-title" id="resources-heading">Resources</h2>
+                <div class="link-list">
+                    <a href="https://butwalhacks.com" class="link-btn" aria-label="Visit Butwal Hacks main website">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                        Main Website
+                    </a>
+                </div>
+            </section>
+
+            <!-- Social & Community -->
+            <section aria-labelledby="social-heading">
+                <h2 class="section-title" id="social-heading">Connect</h2>
+                <div class="social-grid">
+                    <a href="https://www.instagram.com/butwal.hacks" class="social-link" target="_blank" rel="noopener" aria-label="Follow Butwal Hacks on Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="https://x.com/ButwalHacks" class="social-link" target="_blank" rel="noopener" aria-label="Follow Butwal Hacks on X Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                        X / Twitter
+                    </a>
+                    <a href="https://www.linkedin.com/company/butwalhacks/" class="social-link" target="_blank" rel="noopener" aria-label="Connect with Butwal Hacks on LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://www.tiktok.com/@butwalhacks" class="social-link" target="_blank" rel="noopener" aria-label="Watch Butwal Hacks on TikTok">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                        TikTok
+                    </a>
+                </div>
+            </section>
+        </main>
 
         <footer>
-            <small>ButwalHacks © 2026</small>
+            <div class="footer-links">
+                <a href="mailto:inquiry@butwalhacks.com" aria-label="Email Butwal Hacks">inquiry@butwalhacks.com</a>
+            </div>
+            <div class="footer-copy">© 2026 Butwal Hacks</div>
         </footer>
-    </main>
+    </div>
 
+    <!-- Organization Schema -->
     <script type="application/ld+json">
-        [
-            {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "name": "Butwal Hacks",
-                "url": "https://butwalhacks.com",
-                "logo": "https://link.butwalhacks.com/logo.png"
-            },
-            {
-                "@context": "https://schema.org",
-                "@type": "WebPage",
-                "name": "Official Links & Resources - Butwal Hacks",
-                "url": "https://link.butwalhacks.com/",
-                "description": "Official Butwal Hacks links for events, community, and resources. Find Daydream Butwal, HackDay Butwal, and the developer community hub.",
-                "isPartOf": {
-                    "@type": "WebSite",
-                    "name": "Butwal Hacks",
-                    "url": "https://butwalhacks.com"
-                }
-            }
-        ]
-    </script>
-    <script>
-        const themes = {
-            'obsidian-rose': {
-                '--bg-start': '#F7E8EC',
-                '--bg-end': '#F7E8EC',
-                '--text': '#1A0B12',
-                '--primary': '#C57C8A',
-                '--primary-hover': '#A85A6B',
-            },
-            'sage-purple': {
-                '--bg-start': '#C4CA8E',
-                '--bg-end': '#5E8A6E',
-                '--text': '#3B2B46',
-                '--primary': '#5E8A6E',
-                '--primary-hover': '#4D6654',
-            },
-            'matcha-grape': {
-                '--bg-start': '#D1EFBD',
-                '--bg-end': '#D1EFBD',
-                '--text': '#89D384',
-                '--primary': '#A1A1F7',
-                '--primary-hover': '#8787DC',
-            },
-            'twilight-rose': {
-                '--bg-start': '#F3E6EC',
-                '--bg-end': '#F3E6EC',
-                '--text': '#2E1F24',
-                '--primary': '#CF9DB8',
-                '--primary-hover': '#B37997',
-            },
-            'ocean-coral': {
-                '--bg-start': '#D2D0C3',
-                '--bg-end': '#D2D0C3',
-                '--text': '#579C98',
-                '--primary': '#E1536A',
-                '--primary-hover': '#C13A4F',
-            },
-            'earth-tones': {
-                '--bg-start': '#F6D0B9',
-                '--bg-end': '#F6D0B9',
-                '--text': '#331106',
-                '--primary': '#AA7156',
-                '--primary-hover': '#8D5740',
-            }
-        };
-
-        function setTheme(themeName) {
-            const theme = themes[themeName];
-            Object.keys(theme).forEach(key => {
-                document.documentElement.style.setProperty(key, theme[key]);
-            });
-            localStorage.setItem('selectedTheme', themeName);
-            updateThemeMenu(themeName);
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Butwal Hacks",
+        "url": "https://butwalhacks.com",
+        "logo": "https://links.butwalhacks.com/public/og-image.png",
+        "sameAs": [
+            "https://github.com/ButwalHacks",
+            "https://instagram.com/butwal.hacks",
+            "https://twitter.com/butwalhacks",
+            "https://linkedin.com/company/butwalhacks",
+            "https://tiktok.com/@butwalhacks"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "inquiry@butwalhacks.com",
+            "contactType": "General Inquiries"
         }
-
-        function toggleThemeMenu() {
-            const menu = document.getElementById('themeMenu');
-            menu.classList.toggle('active');
-        }
-
-        function updateThemeMenu(themeName) {
-            document.querySelectorAll('.theme-option').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.textContent.toLowerCase().includes(themeName.split('-')[0])) {
-                    btn.classList.add('active');
-                }
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            const savedTheme = localStorage.getItem('selectedTheme') || 'obsidian-rose';
-            setTheme(savedTheme);
-            pingIndexNow();
-        });
-
-        document.addEventListener('click', (e) => {
-            const menu = document.getElementById('themeMenu');
-            const btn = document.querySelector('.theme-btn');
-            if (!menu.contains(e.target) && !btn.contains(e.target)) {
-                menu.classList.remove('active');
-            }
-        });
-
-        function pingIndexNow() {
-            const key = '3b324d61001a41da9c4a841da49f1312';
-            const url = 'https://link.butwalhacks.com/';
-            const storageKey = 'indexnow_last_ping';
-            const lastPing = Number(localStorage.getItem(storageKey) || 0);
-            const oneWeek = 7 * 24 * 60 * 60 * 1000;
-
-            if (Date.now() - lastPing < oneWeek) {
-                return;
-            }
-
-            fetch('https://api.indexnow.org/indexnow', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    host: 'link.butwalhacks.com',
-                    key: key,
-                    keyLocation: 'https://link.butwalhacks.com/3b324d61001a41da9c4a841da49f1312.txt',
-                    urlList: [url]
-                })
-            }).then(() => {
-                localStorage.setItem(storageKey, String(Date.now()));
-            }).catch(() => {
-                // No-op: IndexNow is best-effort and should not block the UI.
-            });
-        }
+    }
     </script>
 </body>
 </html>
