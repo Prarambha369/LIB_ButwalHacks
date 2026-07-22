@@ -209,6 +209,44 @@
             font-weight: 700;
         }
 
+        .section-copy {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+        }
+
+        .application-card {
+            padding: 1rem;
+            background: linear-gradient(180deg, rgba(220, 38, 38, 0.08), rgba(255, 255, 255, 0.02));
+            border: 1px solid rgba(220, 38, 38, 0.2);
+            border-radius: 14px;
+        }
+
+        .application-roles {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+        }
+
+        .application-roles h3 {
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .application-roles ul {
+            list-style: none;
+            display: grid;
+            gap: 0.6rem;
+        }
+
+        .application-roles li {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
         /* Event Cards */
         .events-grid {
             display: grid;
@@ -238,6 +276,7 @@
             padding: 2px;
             background: linear-gradient(135deg, var(--accent-red), transparent);
             -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             opacity: 0;
@@ -423,6 +462,30 @@
             <a href="https://whatsapp.com/channel/0029VbCFYuGEgGfT9YfkD61s" class="cta-primary" aria-label="Join Butwal Hacks community on WhatsApp">
                 Join Our Community →
             </a>
+
+            <!-- Applications -->
+            <section aria-labelledby="applications-heading">
+                <h2 class="section-title" id="applications-heading">Applications</h2>
+                <div class="application-card">
+                    <p class="section-copy">Are you passionate about technology, creativity, community building, and making a real impact?</p>
+                    <p class="section-copy">Butwal Hacks is looking for motivated students and young innovators to join our growing community.</p>
+                    <div class="link-list">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfRvogbwE3t282u3F6bQN4qxoeKZfnbS6Tvm62kNF9qxLxjMw/viewform?usp=header" class="link-btn" target="_blank" rel="noopener" aria-label="Open Application-Butwal Hacks form">
+                            Application-Butwal Hacks
+                        </a>
+                    </div>
+                    <div class="application-roles">
+                        <h3>Open positions</h3>
+                        <ul>
+                            <li>IT Lead - Guide technical strategy and development initiatives.</li>
+                            <li>Content Creator & Content Writer - Craft compelling narratives and engaging content.</li>
+                            <li>Creative Designer - Design visually impactful assets that elevate our brand.</li>
+                            <li>Partnership Lead - Build and nurture strategic collaborations to expand our reach.</li>
+                        </ul>
+                    </div>
+                    <p class="section-copy" style="margin-top: 1rem; margin-bottom: 0;">Join us in shaping a community where young people can build, learn, and create impact together.</p>
+                </div>
+            </section>
 
             <!-- Featured Events -->
             <section aria-labelledby="events-heading">
